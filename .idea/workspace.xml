@@ -1,14 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="65316325-9d96-41bf-9cb9-abc1b2ed9a82" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2 lesson DZ.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Display.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frameset.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Images/DSC00001.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Images/DSC00021.jpg" afterDir="false" />
+    <list default="true" id="65316325-9d96-41bf-9cb9-abc1b2ed9a82" name="Default Changelist" comment="20.01.21">
+      <change afterPath="$PROJECT_DIR$/0.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/00.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/19.12.30 table.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/20.01.15.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlexBox.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eurookna.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Байки.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Композиция с красным, синим и желтым.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/1.html" beforeDir="false" afterPath="$PROJECT_DIR$/1.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/19.12.21.15.00.html" beforeDir="false" afterPath="$PROJECT_DIR$/19.12.21.15.00.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -59,6 +63,16 @@
       </list>
     </option>
   </component>
+  <component name="RunManager">
+    <configuration name="2 lesson DZ.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/1Проекты/2 lesson DZ.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JavaScript Debug.2 lesson DZ.html" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -75,6 +89,17 @@
       <workItem from="1577178870090" duration="3312000" />
       <workItem from="1577259959626" duration="6992000" />
       <workItem from="1577343227451" duration="13435000" />
+      <workItem from="1577435143619" duration="7350000" />
+      <workItem from="1577523097460" duration="2968000" />
+      <workItem from="1577693147391" duration="7457000" />
+      <workItem from="1578485291239" duration="9215000" />
+      <workItem from="1578553258614" duration="654000" />
+      <workItem from="1578997770258" duration="4706000" />
+      <workItem from="1579072377685" duration="6009000" />
+      <workItem from="1579161866283" duration="6185000" />
+      <workItem from="1579246539628" duration="2794000" />
+      <workItem from="1579520475794" duration="6229000" />
+      <workItem from="1579594920784" duration="10222000" />
     </task>
     <servers />
   </component>
@@ -86,7 +111,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
@@ -94,6 +121,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <option name="LAST_COMMIT_MESSAGE" value="" />
+    <MESSAGE value="20.01.21" />
+    <option name="LAST_COMMIT_MESSAGE" value="20.01.21" />
   </component>
 </project>
