@@ -1,0 +1,890 @@
+<!DOCTYPE html>
+<html lang="en, la">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="https://fonts.googleapis.com/css?family=Oleo+Script&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Oxygen&display=swap" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
+    <style>
+        *:focus {
+            outline: none;
+        }
+
+        body {
+            background: #f7f7f7;
+        }
+        a:hover, a:active {
+            color: #222;
+        }
+        .wrapper {
+            width: 972px;
+            height: 1391px;
+            background: #fff;
+            margin: 61px auto 84px auto;
+            font-family: Arial, sans-serif;
+            outline: 1px solid rgb(236, 236, 236);
+        }
+
+        .header {
+            position: relative;
+            width: 972px;
+            height: 90px;
+            margin: 0 auto;
+            font-family: Oxygen, sans-serif;
+            text-transform: capitalize;
+        }
+        .header-logo {
+            position: relative;
+            float: left;
+            width: 397px;
+            height: 90px;
+        }
+        .header-logo__logo {
+            position: absolute;
+            top: 20px;
+            left: 25px;
+            font-family: "Oleo Script", sans-serif;
+            font-size: 40px;
+            text-decoration: none;
+            color: rgb(34, 34, 34);
+        }
+        .header-logo__slogan {
+            position: absolute;
+            top: 60px;
+            left: 32px;
+            font-family: Arial, sans-serif;
+            font-size: 11px;
+            text-transform: none;
+            color: rgb(153, 153, 153);
+        }
+        .header-menu {
+            position: relative;
+            float: left;
+            width: 465px;
+            height: 90px;
+            font-size: 14px;
+        }
+        .header-menu__item {
+            float: left;
+            width: 93px;
+            height: 90px;
+            text-decoration: none;
+            color: rgb(102, 102, 102);
+            text-align: center;
+            box-sizing: border-box;
+            padding-top: 45px;
+        }
+        .blog:hover + .header-menu-submenu, .header-menu-submenu:hover {
+            display: block;
+        }
+        .header-menu-submenu {
+            position: absolute;
+            display: none;
+            width: 166px;
+            height: 157px;
+            top: 70px;
+            left: 300px;
+            background: #fff;
+            outline: 1px solid rgb(236, 236, 236);
+            z-index: 1;
+        }
+        .header-menu-submenu::before {
+            content: "";
+            position: absolute;
+            display: block;
+            top: -3px;
+            left: 23px;
+            width: 5px;
+            height: 5px;
+            border-bottom: 1px solid rgb(236, 236, 236);
+            border-right: 1px solid rgb(236, 236, 236);
+            background: #fff;
+            transform: rotate(45deg);
+            --moz-transform: rotate(45deg);
+            --o-transform: rotate(45deg);
+            --webkit-transform: rotate(45deg);
+            --ms-transform: rotate(45deg);
+        }
+        .header-menu-submenu__item {
+            display: block;
+            font-family: Oxygen, sans-serif;
+            font-size: 12px;
+            color: #666;
+            text-decoration: none;
+            margin: 5px;
+            padding: 5px;
+        }
+        .header-menu-submenu__item:hover,
+        .header-menu-submenu__item:active,
+        .header-menu-submenu__item:focus {
+            background: #f3f3f3;
+        }
+        .header-menu-submenu__item-span {
+            font-family: Arial, sans-serif;
+            font-size: 10px;
+            color: #aaa;
+        }
+        .header-menu-submenu-hr {
+            width: 145px;
+            border: 0;
+            border-bottom: 1px solid rgb(236, 236, 236);
+            margin: 0 auto;
+        }
+        .header-button {
+            position: relative;
+            float: right;
+            width: 110px;
+            height: 90px;
+        }
+        .button {
+            background: linear-gradient(90deg, #ffc34d 0%, #ffc451 100%),
+            -webkit-linear-gradient(90deg, #ffc34d 0%, #ffc451 100%);
+            border: none;
+            border-radius: 3px;
+            box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.1),
+            inset 0 0 1px 0 rgba(0, 0, 0, 0.25);
+            text-shadow: 0 -1px 1px rgba(198, 141, 30, 0.7);
+            color: #fff;
+            font-family: Oxygen, sans-serif;
+        }
+        .header-button__button {
+            position: absolute;
+            width: 85px;
+            height: 30px;
+            font-size: 13px;
+            left: 5px;
+            top: 40px;
+        }
+
+        .main-offer {
+            position: relative;
+            width: 972px;
+            height: 315px;
+            margin: 0 auto;
+        }
+
+        .main-offer__header {
+            position: absolute;
+            top: 35px;
+            left: 460px;
+            font-family: Oxygen, sans-serif;
+            font-size: 38px;
+            font-weight: normal;
+            text-transform: capitalize;
+            color: rgb(81, 81, 81);
+        }
+
+        .main-offer__button {
+            position: absolute;
+            top: 180px;
+            left: 710px;
+            width: 170px;
+            height: 44px;
+            font-family: Oxygen, sans-serif;
+            font-size: 17px;
+            text-transform: capitalize;
+            text-align: left;
+            line-height: 1;
+        }
+
+        .main-offer__button-quality {
+            font-size: 10px;
+            font-family: Arial, sans-serif;
+            color: rgb(210, 134, 0);
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+        .main-offer__button::after {
+            position: absolute;
+            top: 8px;
+            right: 10px;
+            font-family: fontawesome;
+            content: "\f054";
+            font-size: 30px;
+        }
+
+        .main-offer__text {
+            position: absolute;
+            width: 420px;
+            top: 105px;
+            left: 480px;
+            font-family: Oxygen, sans-serif;
+            font-size: 14px;
+            font-weight: normal;
+            text-align: right;
+            color: rgb(102, 102, 102);
+        }
+
+        .main-offer__photo {
+            position: absolute;
+            width: 302px;
+            height: 199px;
+            left: 80px;
+            top: 60px;
+            background: #f6f6f6;
+            box-shadow: inset 0 0 3px 0 rgba(0, 0, 0, 0.25);
+        }
+
+        .main-offer__photo__photo {
+            position: absolute;
+            margin: 5px;
+            z-index: 1;
+        }
+
+        .main-offer__photo__text {
+            position: absolute;
+            display: block;
+            width: 214px;
+            height: 49px;
+            bottom: 10px;
+            left: 44px;
+            background: rgba(0, 0, 0, .5);
+            border-radius: 3px;
+            z-index: 2;
+        }
+
+        .main-offer__photo__text::before {
+            content: "";
+            position: absolute;
+            background: url(https://s8.wampi.ru/2020/03/04/111.png);
+            height: 49px;
+            width: 32px;
+            margin-left: -35px;
+        }
+
+        .main-offer__photo__text::after {
+            content: "";
+            position: absolute;
+            background: url(https://s8.wampi.ru/2020/03/04/111.png) 0 49px;
+            height: 49px;
+            width: 32px;
+            margin-left: 218px;
+        }
+
+        .main-offer__photo__text__header {
+            position: absolute;
+            top: 5px;
+            left: 7px;
+            font-size: 13px;
+            color: rgb(246, 246, 246);
+        }
+
+        .main-offer__photo__text__price {
+            position: absolute;
+            top: 25px;
+            left: 7px;
+            font-size: 11px;
+            color: rgb(255, 193, 76);
+        }
+
+        .main-offer__photo__text__place {
+            color: #676767;
+        }
+
+        .main-offer__photo__bottom-shadow {
+            position: absolute;
+            width: 250px;
+            bottom: 0;
+            left: 26px;
+            border-radius: 10px;
+            box-shadow: 0 1px 4px 1px rgba(0, 0, 0, 0.6);
+            z-index: 0;
+        }
+
+        .articles {
+            height: 390px;
+        }
+
+        .articles-wrapper {
+            width: 937px;
+            height: 390px;
+            margin: 0 auto;
+        }
+
+        .articles-wrapper__header {
+            font-family: Oxygen, sans-serif;
+            font-size: 18px;
+            font-weight: normal;
+            color: rgb(34, 34, 34);
+            text-transform: capitalize;
+            padding: 5px;
+            margin-bottom: 0;
+        }
+
+        .articles-wrapper__article {
+            position: relative;
+            width: 32%;
+            height: 355px;
+            float: left;
+            margin: 0 7px;
+        }
+
+        .articles-wrapper__article:last-child {
+            margin-right: 0;
+        }
+
+        .articles-wrapper__article__photo {
+            position: absolute;
+            width: 301px;
+            height: 210px;
+            background: url(https://i9.wampi.ru/2020/03/05/Layer-9-copy.png) bottom no-repeat;
+            z-index: 0;
+        }
+
+        .articles-wrapper__article-photo {
+            position: absolute;
+            width: 295px;
+            height: 142px;
+            border: 3px solid #fff;
+            z-index: 3;
+        }
+
+        .articles-wrapper__article-shadow {
+            position: absolute;
+            width: 295px;
+            height: 142px;
+            border: 3px solid #fff;
+        }
+
+        .articles-wrapper__article-big-button {
+            position: absolute;
+            top: 43px;
+            left: 120px;
+            width: 62px;
+            height: 62px;
+            border-radius: 50%;
+            border-color: transparent;
+            background: rgba(0, 0, 0, .2) url(https://i9.wampi.ru/2020/03/05/Shape-12-copy.png) center no-repeat;
+            font-size: 36px;
+            color: rgb(75, 75, 75);
+            text-shadow: 0 1px 2px rgba(255, 255, 255, 0.004);
+            padding-bottom: 5px;
+        }
+
+        .articles-wrapper__article-download-button {
+            position: absolute;
+            top: 56px;
+            left: 80px;
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            border-color: transparent;
+            background: url(https://i9.wampi.ru/2020/03/05/Layer-20.png) center no-repeat, rgba(0, 0, 0, .2) url(https://s9.wampi.ru/2020/03/05/Shape-12-copy-1.png) center no-repeat;
+        }
+
+        .articles-wrapper__article-copy-button {
+            position: absolute;
+            top: 56px;
+            left: 186px;
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            border-color: transparent;
+            background: url(https://i9.wampi.ru/2020/03/05/Layer-19.png) center no-repeat, rgba(0, 0, 0, .2) url(https://s9.wampi.ru/2020/03/05/Shape-12-copy-1.png) center no-repeat;
+        }
+
+        .article-shadow1 {
+            z-index: 2;
+        }
+
+        .article-shadow2 {
+            z-index: 2;
+        }
+
+        .article-shadow3 {
+            z-index: 4;
+        }
+
+        .articles-wrapper__article__figcaption {
+            position: absolute;
+            top: 156px;
+            left: 10px;
+            font-size: 11px;
+            color: rgb(153, 153, 153);
+            text-shadow: 0 1px 0 rgba(255, 255, 255, 0.004);
+        }
+
+        .articles-wrapper__article__figcaption-header {
+            font-family: Oxygen, sans-serif;
+            font-size: 14px;
+            text-transform: capitalize;
+            color: rgb(102, 102, 102);
+            line-height: 1.7;
+        }
+
+        .articles-wrapper__article__text {
+            position: absolute;
+            top: 210px;
+            left: 10px;
+            font-size: 12px;
+            color: rgb(102, 102, 102);
+            text-shadow: 0 1px 0 rgba(255, 255, 255, 0.004);
+            hyphens: auto;
+            -webkit-hyphens: auto;
+            -moz-hyphens: auto;
+            -ms-hyphens: auto;
+            text-align: justify;
+            padding-right: 10px;
+        }
+
+        .tabs {
+            position: relative;
+            height: 310px;
+            width: 972px;
+            margin: 0 auto;
+        }
+
+        .tabs__header {
+            font-family: Oxygen, sans-serif;
+            font-size: 18px;
+            font-weight: normal;
+            color: #222;
+            padding-left: 20px;
+        }
+
+        .search-highlighted {
+            background: #ffe7b9;
+            color: #c07e00;
+        }
+
+        .tabs-wrapper {
+            position: relative;
+            height: 235px;
+            font-size: 0;
+        }
+
+        .tabs-input {
+            position: absolute;
+            left: -500px;
+        }
+
+        .tab-panel {
+            display: none;
+            height: 180px;
+            padding-top: 13px;
+            border: 1px solid rgb(236, 236, 236);
+        }
+
+        #tab1:checked ~ .tab-panel-one,
+        #tab2:checked ~ .tab-panel-two,
+        #tab3:checked ~ .tab-panel-three {
+            display: block;
+        }
+
+        .tabs-input__label {
+            position: relative;
+            display: inline-block;
+            padding: 10px 17px 10px;
+            border: 1px solid transparent;
+            border-bottom: 0;
+            cursor: pointer;
+            font-size: 14px;
+            color: #999;
+            text-transform: capitalize;
+        }
+
+        .tabs-input__label:hover,
+        #tab1:checked + .tabs-input__label,
+        #tab2:checked + .tabs-input__label,
+        #tab3:checked + .tabs-input__label {
+            color: #666;
+        }
+
+        #tab1:checked + .tabs-input__label,
+        #tab2:checked + .tabs-input__label,
+        #tab3:checked + .tabs-input__label {
+            border-color: rgb(236, 236, 236);
+            border-bottom: 1px solid #fff;
+            margin-bottom: -1px;
+        }
+
+        .tab-panel-header {
+            font-size: 14px;
+            font-weight: normal;
+            color: #333;
+            padding-left: 20px;
+        }
+
+        .tab-panel__wrapper {
+            position: relative;
+            width: 890px;
+            height: 135px;
+            margin: -10px auto 0;
+            border-top: 1px solid rgb(236, 236, 236);
+        }
+
+        .tab-panel-section {
+            float: left;
+            width: 35%;
+            height: 135px;
+            font-size: 12px;
+            color: #999;
+        }
+
+        .tab-panel-section:first-child {
+            width: 30%;
+        }
+
+        .tab-panel-ul li {
+            list-style: none;
+            margin-left: -35px;
+            padding-bottom: 5px;
+        }
+
+        .tab-panel-ul li::before {
+            content: "> ";
+            margin-right: 5px;
+        }
+
+        .tab-panel-img {
+            float: left;
+            margin: 15px 10px 0 40px;
+        }
+
+        .tab-panel-H5 {
+            font-size: 12px;
+            color: #333;
+            margin: 10px 0 -5px;
+        }
+
+        .footer {
+            position: relative;
+            height: 250px;
+        }
+
+        .footer-wrapper {
+            width: 930px;
+            height: 245px;
+            margin: 0 auto 0;
+            font-size: 0;
+            border-top: 1px solid rgb(236, 236, 236);
+        }
+
+        .footer-section {
+            float: left;
+            height: 245px;
+            box-sizing: border-box;
+        }
+
+        .footer-section:first-child {
+            width: 180px;
+            padding-left: 5px;
+            margin-right: 55px;
+        }
+
+        .footer-section:last-child {
+            width: 500px;
+            padding-left: 45px;
+        }
+
+        .footer-section:nth-child(2) {
+            width: 190px;
+            padding-left: 10px;
+
+        }
+
+        .footer-section-H4 {
+            font-size: 12px;
+            text-transform: uppercase;
+            color: #ffad19;
+        }
+
+        .footer-section-link {
+            display: block;
+            font-size: 12px;
+            text-decoration: none;
+            color: #666;
+            text-transform: capitalize;
+            padding-bottom: 5px;
+            margin-bottom: 9px;
+            border-bottom: 1px solid rgb(236, 236, 236);
+        }
+
+        .footer-section a:last-child {
+            border-bottom: 0;
+        }
+
+        .footer-section:last-child a::before {
+            position: relative;
+            content: "\f1ea";
+            font-family: fontawesome;
+            font-size: 20px;
+            top: 5px;
+            padding-right: 10px;
+        }
+
+        .footer-section:last-child a span {
+            display: block;
+            font-size: 11px;
+            margin-left: 32px;
+            color: #aaa;
+            text-transform: none;
+        }
+        .footer-wrapper:before,
+        .bottom-shadow:after {
+            z-index: -1;
+            position: absolute;
+            content: "";
+            bottom: 11px;
+            left: 10px;
+            width: 50%;
+            top: 80%;
+            max-width: 300px;
+            background: #777;
+            -webkit-box-shadow: 0 15px 10px #777;
+            -moz-box-shadow: 0 15px 10px #777;
+            box-shadow: 0 15px 10px #777;
+            -webkit-transform: rotate(-2deg);
+            -moz-transform: rotate(-2deg);
+            -o-transform: rotate(-2deg);
+            -ms-transform: rotate(-2deg);
+            transform: rotate(-2deg);
+        }
+        .footer-wrapper:after {
+            -webkit-transform: rotate(2deg);
+            -moz-transform: rotate(2deg);
+            -o-transform: rotate(2deg);
+            -ms-transform: rotate(2deg);
+            transform: rotate(2deg);
+            right: 10px;
+            left: auto;
+        }
+    </style>
+</head>
+<body>
+<div class="background">
+    <div class="wrapper">
+        <header class="header">
+            <div class="header-logo">
+                <a class="header-logo__logo" href="">Officetime</a>
+                <p class="header-logo__slogan" lang="la">Officetime a psd template</p>
+            </div>
+            <nav class="header-menu">
+                <a class="header-menu__item home" href="">home</a>
+                <a class="header-menu__item about" href="">about</a>
+                <a class="header-menu__item products" href="">products</a>
+                <a class="header-menu__item blog" href="">blog</a>
+                <div class="header-menu-submenu">
+                    <a class="header-menu-submenu__item" href="">Articles<br><span class="header-menu-submenu__item-span">this text is complementary</span></a>
+                    <hr class="header-menu-submenu-hr">
+                    <a class="header-menu-submenu__item" href="">Writers</a>
+                    <hr class="header-menu-submenu-hr">
+                    <a class="header-menu-submenu__item" href="">Top 50</a>
+                    <hr class="header-menu-submenu-hr">
+                    <a class="header-menu-submenu__item" href="">The Hall of Fame</a>
+                </div>
+                <a class="header-menu__item help" href="">help</a>
+            </nav>
+            <div class="header-button">
+                <button class="header-button__button button">Apply Now</button>
+            </div>
+        </header>
+        <article class="main-offer">
+            <H1 class="main-offer__header">the amazing spider man</H1>
+            <p class="main-offer__text">Nullam quis risus eget urna mollis ornare vel eu leo. Maecenas sed diam eget
+                risus varius blandit sit.</p>
+            <button class="main-offer__button button">watch trailer<br><span class="main-offer__button-quality">in 720p quality</span>
+            </button>
+            <div class="main-offer__photo">
+                <div class="main-offer__photo__bottom-shadow"></div>
+                <img alt="" class="main-offer__photo__photo" src="https://s8.wampi.ru/2020/03/03/Layer-45.png">
+                <img alt="" class="main-offer__photo__photo" src="https://s9.wampi.ru/2020/03/03/Layer-42.png">
+                <div class="main-offer__photo__text">
+                    <span class="main-offer__photo__text__header">Great Lakehouse with Land</span>
+                    <span class="main-offer__photo__text__price">from 21K <span class="main-offer__photo__text__place">- in Texas, USA</span></span>
+                </div>
+            </div>
+        </article>
+        <section class="articles">
+            <div class="articles-wrapper">
+                <H3 class="articles-wrapper__header">the undiscovered beauty</H3>
+                <figure class="articles-wrapper__article">
+                    <div class="articles-wrapper__article__photo"></div>
+                    <img alt=""
+                         class="articles-wrapper__article-photo article-photo1"
+                         src="https://s9.wampi.ru/2020/03/05/Layer-10.png">
+                    <img alt=""
+                         class="articles-wrapper__article-shadow article-shadow1"
+                         src="https://i9.wampi.ru/2020/03/05/Layer-18.png">
+                    <button class="articles-wrapper__article-big-button article-shadow1 big-button1">+</button>
+                    <button class="articles-wrapper__article-download-button article-shadow1 download-button1"></button>
+                    <button class="articles-wrapper__article-copy-button article-shadow1 copy-button1"></button>
+                    <figcaption class="articles-wrapper__article__figcaption"><span
+                            class="articles-wrapper__article__figcaption-header">vehicula inceptos pharetra</span><br>Aenean
+                        eu leo quam. Pellentesque ornare sem lacinia.
+                    </figcaption>
+                    <p class="articles-wrapper__article__text">Praesent commodo cursus magna, vel scelerisque nisl
+                        consectetur et. Maecenas faucibus mollis interdum. Donec ullamcorper nulla non metus auctor
+                        fringilla. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Sed posuere
+                        consectetur est at lobortis. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </figure>
+                <figure class="articles-wrapper__article">
+                    <div class="articles-wrapper__article__photo"></div>
+                    <img alt=""
+                         class="articles-wrapper__article-photo article-photo2"
+                         src="https://s8.wampi.ru/2020/03/05/Layer-11.png">
+                    <img alt=""
+                         class="articles-wrapper__article-shadow article-shadow2"
+                         src="https://i9.wampi.ru/2020/03/05/Layer-18.png">
+                    <button class="articles-wrapper__article-big-button article-shadow2 big-button2">+</button>
+                    <button class="articles-wrapper__article-download-button article-shadow2 download-button2"></button>
+                    <button class="articles-wrapper__article-copy-button article-shadow2 copy-button2"></button>
+                    <figcaption class="articles-wrapper__article__figcaption"><span
+                            class="articles-wrapper__article__figcaption-header">euismod pellentesque egestas commodo</span><br>Cum
+                        sociis natoque penatibus et magnis dis parturient.
+                    </figcaption>
+                    <p class="articles-wrapper__article__text">Morbi leo risus, porta ac consectetur ac, vestibulum at
+                        eros. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Fusce dapibus, tellus ac
+                        cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Lorem
+                        ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </figure>
+                <figure class="articles-wrapper__article">
+                    <div class="articles-wrapper__article__photo"></div>
+                    <img alt=""
+                         class="articles-wrapper__article-photo article-photo3"
+                         src="https://s8.wampi.ru/2020/03/05/Layer-12.png">
+                    <img alt=""
+                         class="articles-wrapper__article-shadow article-shadow3"
+                         src="https://i9.wampi.ru/2020/03/05/Layer-18.png">
+                    <button class="articles-wrapper__article-big-button article-shadow3 big-button3">+</button>
+                    <button class="articles-wrapper__article-download-button article-shadow3 download-button3"></button>
+                    <button class="articles-wrapper__article-copy-button article-shadow3 copy-button3"></button>
+                    <figcaption class="articles-wrapper__article__figcaption"><span
+                            class="articles-wrapper__article__figcaption-header">tristique dapibus</span><br>Curabitur
+                        blandit tempus porttitor.
+                    </figcaption>
+                    <p class="articles-wrapper__article__text">Fusce dapibus, tellus ac cursus commodo, tortor mauris
+                        condimentum nibh, ut fermentum massa justo sit amet risus. Vivamus sagittis lacus vel augue
+                        laoreet rutrum faucibus dolor auctor. Nullam quis risus eget urna mollis ornare vel eu leo.
+                        Donec sed odio dui.</p>
+                </figure>
+            </div>
+        </section>
+        <section class="tabs">
+            <H3 class="tabs__header">Ta<span class="search-highlighted">bbb</span>s get your content in line</H3>
+            <div class="tabs-wrapper">
+                <input aria-controls="tabbb-one" checked class="tabs-input tabs-input-one" id="tab1" name="tabset"
+                       type="radio">
+                <label class="tabs-input__label" for="tab1">tabb one</label>
+                <input aria-controls="tabbb-two" class="tabs-input tabs-input-two" id="tab2" name="tabset" type="radio">
+                <label class="tabs-input__label" for="tab2">tabb two</label>
+                <input aria-controls="tabbb-three" class="tabs-input tabs-input-three" id="tab3" name="tabset"
+                       type="radio">
+                <label class="tabs-input__label" for="tab3">tabb three</label>
+                <section class="tab-panel tab-panel-one" id="tabbb-one">
+                    <H4 class="tab-panel-header">You content can be <span class="search-highlighted">highlighted</span>
+                        like this.111</H4>
+                    <div class="tab-panel__wrapper">
+                        <div class="tab-panel-section">
+                            <ul class="tab-panel-ul">
+                                <li>Magna Porta111</li>
+                                <li>Cras Amet Pharetra111</li>
+                                <li>Ornare Dolor Pharetra111</li>
+                                <li>Nibh Sit Elit111</li>
+                                <li>Venenatis Tortor Aenean111</li>
+                            </ul>
+                        </div>
+                        <div class="tab-panel-section">
+                            <img alt="" class="tab-panel-img" src="https://i9.wampi.ru/2020/03/06/Layer-32-1.png">
+                            <H5 class="tab-panel-H5">Type a Title111</H5>
+                            <p>Nulla vitae elit libero, a pharetra augue. Maecenas sed diam eget risus varius blandit
+                                sit amet magna.
+                            </p>
+                        </div>
+                        <div class="tab-panel-section">
+                            <img alt="" class="tab-panel-img" src="https://s9.wampi.ru/2020/03/06/Layer-29-1.png">
+                            <H5 class="tab-panel-H5">Type a Title111</H5>
+                            <p>Donec id elit non mi porta gravida at eget metus.</p>
+                        </div>
+                    </div>
+                </section>
+                <section class="tab-panel tab-panel-two" id="tabbb-two">
+                    <H4 class="tab-panel-header">You content can be <span class="search-highlighted">highlighted</span>
+                        like this.222</H4>
+                    <div class="tab-panel__wrapper">
+                        <div class="tab-panel-section">
+                            <ul class="tab-panel-ul">
+                                <li>Magna Porta222</li>
+                                <li>Cras Amet Pharetra222</li>
+                                <li>Ornare Dolor Pharetra222</li>
+                                <li>Nibh Sit Elit222</li>
+                                <li>Venenatis Tortor Aenean222</li>
+                            </ul>
+                        </div>
+                        <div class="tab-panel-section">
+                            <img alt="" class="tab-panel-img" src="https://i9.wampi.ru/2020/03/06/Layer-32-1.png">
+                            <H5 class="tab-panel-H5">Type a Title222</H5>
+                            <p>Nulla vitae elit libero, a pharetra augue. Maecenas sed diam eget risus varius blandit
+                                sit amet magna.
+                            </p>
+                        </div>
+                        <div class="tab-panel-section">
+                            <img alt="" class="tab-panel-img" src="https://s9.wampi.ru/2020/03/06/Layer-29-1.png">
+                            <H5 class="tab-panel-H5">Type a Title222</H5>
+                            <p>Donec id elit non mi porta gravida at eget metus.</p>
+                        </div>
+                    </div>
+                </section>
+                <section class="tab-panel tab-panel-three" id="tabbb-three">
+                    <H4 class="tab-panel-header">You content can be <span class="search-highlighted">highlighted</span>
+                        like this.333</H4>
+                    <div class="tab-panel__wrapper">
+                        <div class="tab-panel-section">
+                            <ul class="tab-panel-ul">
+                                <li>Magna Porta333</li>
+                                <li>Cras Amet Pharetra333</li>
+                                <li>Ornare Dolor Pharetra333</li>
+                                <li>Nibh Sit Elit111</li>
+                                <li>Venenatis Tortor Aenean333</li>
+                            </ul>
+                        </div>
+                        <div class="tab-panel-section">
+                            <img alt="" class="tab-panel-img" src="https://i9.wampi.ru/2020/03/06/Layer-32-1.png">
+                            <H5 class="tab-panel-H5">Type a Title333</H5>
+                            <p>Nulla vitae elit libero, a pharetra augue. Maecenas sed diam eget risus varius blandit
+                                sit amet magna.
+                            </p>
+                        </div>
+                        <div class="tab-panel-section">
+                            <img alt="" class="tab-panel-img" src="https://s9.wampi.ru/2020/03/06/Layer-29-1.png">
+                            <H5 class="tab-panel-H5">Type a Title333</H5>
+                            <p>Donec id elit non mi porta gravida at eget metus.</p>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </section>
+        <footer class="footer">
+            <div class="footer-wrapper bottom-shadow">
+                <nav class="footer-section">
+                    <H4 class="footer-section-H4">single menu title</H4>
+                    <a class="footer-section-link" href="">condimentum etiam purus</a>
+                    <a class="footer-section-link" href="">quam tristique sem</a>
+                    <a class="footer-section-link" href="">fusce parturient</a>
+                    <a class="footer-section-link" href="">tristique tortor condimentum</a>
+                    <a class="footer-section-link" href="">magna parturient aenean</a>
+                    <a class="footer-section-link" href="">tortor nibh etiam</a>
+                </nav>
+                <nav class="footer-section">
+                    <H4 class="footer-section-H4">cursus venenatis mollis</H4>
+                    <a class="footer-section-link" href="">condimentum etiam purus</a>
+                    <a class="footer-section-link" href="">quam tristique sem</a>
+                    <a class="footer-section-link" href="">fusce parturient</a>
+                    <a class="footer-section-link" href="">tristique tortor condimentum</a>
+                    <a class="footer-section-link" href="">magna parturient aenean</a>
+                    <a class="footer-section-link" href="">cursus justo fringilla</a>
+                </nav>
+                <nav class="footer-section">
+                    <H4 class="footer-section-H4">latest articlec</H4>
+                    <a class="footer-section-link" href="">fusce etiam bibendum<br><span>Sed posuere consectetur est at lobortis.</span></a>
+                    <a class="footer-section-link" href="">fuske parturient<br><span>Maecenas faucibus mollis interdum. Cras justo odio, dapibus ac facilisis in, egestas eget quam.</span></a>
+                    <a class="footer-section-link" href="">magna parturient aenean<br><span>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</span></a>
+                </nav>
+            </div>
+        </footer>
+    </div>
+</div>
+</body>
+</html>

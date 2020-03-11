@@ -1,0 +1,697 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CompanyName</title>
+    <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .block_1 {
+            width: 100%;
+            height: 115px;
+        }
+        .inner_1 {
+            position: relative;
+            width: 1027px;
+            height: 115px;
+            margin: auto;
+        }
+        .compname {
+            float: left;
+            width: 445px;
+            height: 115px;
+            font-size: 33px;
+            font-family: Poppins, sans-serif;
+            line-height: 115px;
+        }
+        .company {
+            color: #ee8129;
+        }
+        .name {
+            color: #3070a8;
+            font-weight: 900;
+            letter-spacing: 6px;
+            text-shadow:
+                    -0   -1px 0   #3070a8,
+                    0   -1px 0   #3070a8,
+                    -0    1px 0   #3070a8,
+                    0    1px 0   #3070a8,
+                    -1px -0   0   #3070a8,
+                    1px -0   0   #3070a8,
+                    -1px  0   0   #3070a8,
+                    1px  0   0   #3070a8,
+                    -1px -1px 0   #3070a8,
+                    1px -1px 0   #3070a8,
+                    -1px  1px 0   #3070a8,
+                    1px  1px 0   #3070a8,
+                    -1px -1px 0   #3070a8,
+                    1px -1px 0   #3070a8,
+                    -1px  1px 0   #3070a8,
+                    1px  1px 0   #3070a8;
+        }
+        .menu {
+            float: left;
+            width: 582px;
+            height: 115px;
+        }
+        .nav {
+            list-style: none;
+            font-size: 15px;
+            text-transform: uppercase;
+            font-family: Poppins, sans-serif;
+            box-sizing: border-box
+        }
+        .nav li {
+            position: relative;
+            float: left;
+            top: 15px;
+        }
+        .nav li a {
+            text-decoration: none;
+            line-height: 115px;
+            color: #989898;
+            padding: 0 19px 30px 20px;
+        }
+        li.contact a {
+            padding-right: 0;
+
+        }
+        .nav li a:hover {
+            color: #3070a8;
+            border-bottom: 4px solid #3070a8;
+        }
+        .block_3 {
+            width: 100%;
+            height: 563px;
+        }
+        .inner_3 {
+            position: relative;
+            width: 1027px;
+            height: 563px;
+            margin: auto;
+        }
+        .H_inner_3 {
+            font-size: 30px;
+            font-family: "Trebuchet MS", sans-serif;
+            color: #41525c;
+            text-transform: uppercase;
+            text-align: center;
+            padding: 60px 0;
+            margin: 0;
+        }
+        .inner_3_pic {
+            height: 134px;
+            padding: 14px 0;
+        }
+        .inner_3_pic div {
+            float: left;
+            width: 141px;
+            height: 141px;
+            margin: 0 108px;
+        }
+        .inner_3_pic div:nth-child(1) {
+            margin-left: 86px;
+        }
+        .inner_3_pic div:nth-child(3) {
+            margin-right: 86px;
+        }
+        .lock_pic {
+            background: url(https://s8.wampi.ru/2020/02/21/lock.png) no-repeat;
+        }
+        .potter_pic {
+            background: url(https://s9.wampi.ru/2020/02/21/potter.png) no-repeat;
+        }
+        .tel_pic {
+            background: url(https://s9.wampi.ru/2020/02/21/tel.png) no-repeat;
+        }
+        .inner_3_text {
+            height: 245px;
+        }
+        .inner_3_text div {
+            float: left;
+            height: 245px;
+            width: 342px;
+            box-sizing: border-box;
+            padding-top: 12px;
+        }
+        .inner_3_text div:nth-child(1) {
+            padding-right: 30px;
+        }
+        .inner_3_text div:nth-child(3) {
+            padding-left: 36px;
+        }
+        .inner_3_text h3 {
+            font-size: 30px;
+            font-family: Poppins, sans-serif;
+            color: #3070a8;
+            text-transform: uppercase;
+            font-weight: normal;
+            text-align: center;
+        }
+        .inner_3_text p {
+            font-size: 16px;
+            font-family: 'Open Sans', sans-serif;
+            color: #999999;
+            font-weight: normal;
+            line-height: 1.51;
+            text-align: center;
+            margin: 12px;
+        }
+        .block_4 {
+            width: 100%;
+            height: 577px;
+            background: url(https://s9.wampi.ru/2020/02/24/middle-section.png) no-repeat;
+            background-size: cover;
+
+        }
+        .inner_4 {
+            position: relative;
+            width: 1027px;
+            height: 577px;
+            margin: auto;
+        }
+        .inner_4 H3 {
+            width: 690px;
+            font-size: 26px;
+            font-family: Poppins, sans-serif;
+            font-weight: normal;
+            letter-spacing: .2px;
+            color: #ee8129;
+            text-transform: uppercase;
+            line-height: 1.8;
+            padding-top: 75px;
+        }
+        .inner_4 P {
+            width: 670px;
+            font-size: 19px;
+            font-family: 'Open Sans', sans-serif;
+            font-style: italic;
+            letter-spacing: .09px;
+            color: #fff;
+            margin-top: 9px;
+        }
+        .inner_4 UL {
+            width: 670px;
+            font-size: 15px;
+            font-family: 'Open Sans', sans-serif;
+            letter-spacing: .5px;
+            line-height: 2;
+            color: #9d9d9d;
+            margin-top: 36px;
+            list-style: none;
+        }
+        .inner_4 li {
+            text-indent: -25px;
+            margin: 0 0 12px 25px;
+
+        }
+        .inner_4 li:nth-child(2) {
+            color: #3070a8;
+        }
+        .inner_4 li::before {
+            content: "\25CF";
+            color: #9d9d9d;
+            margin: 0 15px 0 0;
+        }
+        .block_5 {
+            width: 100%;
+            height: 700px;
+            font-family: Trebuchet MS, sans-serif;
+        }
+        .inner_5 {
+            position: relative;
+            width: 1027px;
+            height: 700px;
+            margin: auto;
+            box-sizing: border-box;
+        }
+        .wehave {
+            padding-top: 65px;
+            text-align: center;
+            font-size: 30px;
+        }
+        .left29, .center28, .right30 {
+            position: absolute;
+            border-radius: 5px;
+        }
+        .left29 {
+            width: 290px;
+            top: 170px;
+            left:85px;
+            box-shadow: 0 0 5px rgba(55, 194, 211, .3);
+        }
+        .right30 {
+            width: 290px;
+            top: 170px;
+            left: 668px;
+            box-shadow: 0 0 5px rgba(28, 183, 154, .3);
+        }
+        .center28 {
+            width: 290px;
+            left: 373px;
+            top: 165px;
+            z-index: 1;
+            border: 4px solid #ec8136;
+            box-shadow:  0 0 10px rgba(0,0,0,0.5);
+        }
+        .center_top {
+            width: 290px;
+            height: 68px;
+            background: #ec8136;
+            color: #fff;
+            font-size: 26px;
+            font-weight: bold;
+            text-align:center;
+            line-height: 75px;
+        }
+        .left_top {
+            width: 290px;
+            height: 60px;
+            background: rgba(55, 194, 211, .7);
+            border-radius: 5px;
+            color: #fff;
+            font-size: 26px;
+            font-weight: bold;
+            text-align:center;
+            line-height: 60px;
+        }
+        .right_top {
+            width: 290px;
+            height: 60px;
+            background: rgba(28, 183, 154, .7);
+            border-radius: 5px;
+            color: #fff;
+            font-size: 26px;
+            font-weight: bold;
+            text-align:center;
+            line-height: 60px;
+        }
+        .iconic {
+            width: 290px;
+            height: 76px;
+            margin-top:-4px;
+            background: #fff;
+            font-size: 26px;
+            text-align:center;
+            line-height: 82px;
+        }
+        .price {
+            height: 100px;
+            font-size: 80px;
+            font-weight: bold;
+            text-align:center;
+            line-height: 120px;
+            margin-top: -50px;
+            margin-left: 20px;
+        }
+        .price::before {
+            content: "$";
+            font-size: 20px;
+            font-weight: normal;
+            vertical-align: 40px;
+            padding-right: 2px;
+        }
+        .price::after {
+            content: "Monthly";
+            font-size: 20px;
+            font-weight: normal;
+            vertical-align: -8px;
+        }
+        .empty {
+            height: 34px;
+        }
+        .table {
+            height: 178px;
+            align-items: center;
+        }
+        .row {
+            width:274px;
+            margin: 1px;
+            box-sizing: border-box;
+            padding-top: 12px;
+            padding-left: 50px;
+            color: #91949c;
+            font-size: 18px;
+        }
+        .row:nth-child(odd) {
+            background: #eef5fc;
+        }
+        .row:nth-child(even) {
+            background: #f5f5f6;
+        }
+        .row::before {
+            content:"";
+            background-image: url(https://s8.wampi.ru/2020/02/14/c5d7549bbda4949b3cc5b48d64375546.png);
+            background-size: cover;
+            float: left;
+            width: 15px;
+            height: 15px;
+            margin-right: 10px;
+            margin-top: 5px;
+        }
+        .button_offer {
+            height: 95px;
+        }
+        .button_center {
+            width: 250px;
+            height: 40px;
+            border-radius: 5px;
+            margin: 25px 0 0 20px;
+            font-size: 15px;
+            font-weight: bold;
+            color: #fff;
+            border: none;
+            background: #ec8136;
+            border-bottom: 4px solid #b1561b;
+        }
+        .button_side {
+            width: 250px;
+            height: 40px;
+            border-radius: 5px;
+            margin: 25px 0 0 20px;
+            font-size: 15px;
+            font-weight: bold;
+            color: #fff;
+            border: none;
+            background: #3371a6;
+            border-bottom: 4px solid #16436a;
+        }
+        .block_6 {
+            width: 100%;
+            height: 315px;
+            background: url(https://s8.wampi.ru/2020/02/15/Layer-66-copy-2.png) no-repeat;
+            background-size: cover;
+            font-family: "Trebuchet MS", sans-serif;
+        }
+        .inner_6 {
+            position: relative;
+            width: 1027px;
+            height: 315px;
+            margin: auto;
+        }
+        .what {
+            position: absolute;
+            width: 990px;
+            font-size: 40px;
+            color: #3170a8;
+            top: 50px;
+            text-align: center;
+        }
+        .oran {
+            color: #ee8129;
+        }
+        .baba {
+            position: absolute;
+            width: 99px;
+            height: 98px;
+            background-image: url(https://s9.wampi.ru/2020/02/15/Layer-94.png);
+            top: 137px;
+        }
+        .bro {
+            position: absolute;
+            width: 99px;
+            height: 98px;
+            background-image: url(https://s9.wampi.ru/2020/02/15/Layer-95.png);
+            top: 137px;
+            left: 532px;
+        }
+        .tri_baba {
+            position: absolute;
+            border: 15px solid;
+            border-color: transparent #fff transparent transparent;
+            top:172px;
+            left:96px;
+        }
+        .text_baba {
+            position: absolute;
+            width: 365px;
+            height: 98px;
+            background: #fff;
+            top: 137px;
+            left: 124px;
+        }
+        .tri_bro {
+            position: absolute;
+            border: 15px solid;
+            border-color: transparent #fff transparent transparent;
+            top:172px;
+            left: 628px;
+        }
+        .text_bro {
+            position: absolute;
+            width: 365px;
+            height: 98px;
+            background: #fff;
+            top: 137px;
+            left: 656px;
+        }
+        .text_top {
+            width: 333px;
+            height: 16px;
+            padding: 10px 15px;
+            font-size: 13px;
+            font-style: italic;
+            color: #3070a8;
+        }
+        .text_bottom {
+            width: 333px;
+            height: 30px;
+            margin: 0 15px 0;
+            font-size: 13px;
+            font-family: Arial, sans-serif;
+            color: #666;
+            border-top: 1px dotted;
+            padding-top: 10px;
+        }
+        .block_7 {
+            width: 100%;
+            height: 345px;
+            font-family: OpenSans, sans-serif;
+            color: #666;
+            font-size: 14px;
+        }
+        .inner_7 {
+            position: relative;
+            width: 1027px;
+            height: 345px;
+            margin: 0 auto;
+        }
+        .adr {
+            position: absolute;
+            top: 40px;
+            left: 60px;
+            line-height: 29px;
+        }
+        .adr::before {
+            content: "";
+            display: inline-block;
+            width: 23px;
+            height: 31px;
+            background: url(https://s9.wampi.ru/2020/02/25/Layer-97.png) no-repeat;
+            margin:0 35px -15px -55px;
+        }
+        .tel {
+            position: absolute;
+            top: 175px;
+            left: 60px;
+        }
+        .tel::before {
+            content: "";
+            display: inline-block;
+            width: 18px;
+            height: 26px;
+            background: url(https://s9.wampi.ru/2020/02/25/Vector-Smart-Object1.png) no-repeat;
+            margin:0 35px -10px -55px;
+        }
+        .mail {
+            position: absolute;
+            top: 210px;
+            left: 60px;
+        }
+        .mail::before {
+            content: "";
+            display: inline-block;
+            width: 23px;
+            height: 16px;
+            background: url(https://s8.wampi.ru/2020/02/25/Vector-Smart-Object.png) no-repeat;
+            margin:0 35px -10px -55px;
+        }
+        .social {
+            position: absolute;
+            top: 265px;
+        }
+        .social img{
+            margin-right: 20px;
+        }
+        .inner_7>img {
+            position: absolute;
+            right: 0;
+        }
+        .block_8 {
+            width: 100%;
+            height: 104px;
+            background: #3070a8;
+            font-family: OpenSans, sans-serif;
+            color: #fff;
+            font-size: 14px;
+        }
+        .inner_8 {
+            position: relative;
+            width: 1027px;
+            height: 104px;
+            margin: 0 auto;
+            text-align: center;
+            line-height: 30px;
+            padding-top: 20px;
+        }
+        .inner_8 span{
+            color: #000;
+        }
+    </style>
+</head>
+<body>
+<div class="block_1">
+    <div class="inner_1">
+        <div class="compname"><span class="company">Company</span> <span class="name">NAME</span></div>
+        <div class="menu">
+            <ul class="nav">
+                <li><a href="">home</a></li>
+                <li><a href="">about</a></li>
+                <li><a href="">portfolio</a></li>
+                <li><a href="">services</a></li>
+                <li><a href="">pricing</a></li>
+                <li  class="contact"><a href="">contact</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="block_3">
+    <div class="inner_3">
+        <H2 class="H_inner_3">lorem ipsum is simply dummy text of the printing</H2>
+        <div class="inner_3_pic">
+            <div class="lock_pic"></div>
+            <div class="potter_pic"></div>
+            <div class="tel_pic"></div>
+        </div>
+        <div class="inner_3_text">
+            <div class="lock_text">
+                <H3>protect</H3>
+                <p>100% of customer funds are stored offline in secure cold storage. We offer two­ factor authentication on all
+                    accounts, mobile alerts and delayed withdrawals, and spending and transfer limits.</p>
+            </div>
+            <div class="potter_text">
+                <H3>alert</H3>
+                <p>100% of customer funds are stored offline in secure cold storage. We offer two­ factor authentication on all
+                    accounts, mobile alerts and delayed withdrawals, and spending and transfer limits.</p>
+            </div>
+            <div class="tel_text">
+                <H3>detect</H3>
+                <p>100% of customer funds are stored offline in secure cold storage. We offer two­ factor authentication on all
+                    accounts, mobile alerts and delayed withdrawals, and spending and transfer limits.</p>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="block_4">
+    <div class="inner_4">
+        <H3>Lorem Ipsum is simply dummy text of the printing
+            and typesetting industry. Lorem Ipsum has been....</H3>
+        <p>Lorem Ipsum is simply dummy text of the printing
+            and typesetting industry.</p>
+        <ul>
+            <li>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.Lorem Ipsum is simply dummy text of the printing and typesetting industry.</li>
+            <li>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.</li>
+            <li>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.Lorem Ipsum is simply dummy text of the printing and typesetting industry.</li>
+        </ul>
+    </div>
+</div>
+<div class="block_5">
+    <div class="inner_5">
+        <H1 class="wehave">WE HAVE A VERY FLEXIBLE OFFERS FOR YOU TO CHOOSE</H1>
+        <div class="left29">
+            <div class="left_top">STANDARD</div>
+            <div class="iconic">ICONIC GRAPHICS</div>
+            <div class="price">10</div>
+            <div class="empty"></div>
+            <div class="table">
+                <div class="row">Unmetered Traffic</div>
+                <div class="row">Unlimited Domain</div>
+                <div class="row">Unlimited Databases</div>
+                <div class="row">Unlimited e-Mails</div>
+            </div>
+            <div class="button_offer">
+                <button class="button_side">ENROLL TODAY</button>
+            </div>
+        </div>
+        <div class="center28">
+            <div class="center_top">BEST VALUE</div>
+            <div class="iconic">ICONIC GRAPHICS</div>
+            <div class="price">25</div>
+            <div class="empty"></div>
+            <div class="table">
+                <div class="row">PHP, PERL, ASP, JSP</div>
+                <div class="row">SEMI DEDICATED</div>
+                <div class="row">Staging or Prodaction</div>
+                <div class="row">Unlimited e-Mails</div>
+            </div>
+            <div class="button_offer">
+                <button class="button_center">ENROLL TODAY</button>
+            </div>
+        </div>
+        <div class="right30">
+            <div class="right_top">ULTIMATE</div>
+            <div class="iconic">ICONIC GRAPHICS</div>
+            <div class="price">35</div>
+            <div class="empty"></div>
+            <div class="table">
+                <div class="row">Semi Dedicated</div>
+                <div class="row">1TB Storage</div>
+                <div class="row">Faster Site, Better SEO</div>
+                <div class="row">Unlimited e-Mails</div>
+            </div>
+            <div class="button_offer">
+                <button class="button_side">ENROLL TODAY</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="block_6">
+    <div class="inner_6">
+        <div class="what"><span class="oran">WHAT</span> CLIENT SAYS</div>
+        <div class="baba"></div>
+        <div class="bro"></div>
+        <div class="tri_baba"></div>
+        <div class="text_baba">
+            <div class="text_top">- Staciya Trollio<span class="right">Customer</span></div>
+            <div class="text_bottom">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce a volutpat ipsum.</div>
+        </div>
+        <div class="tri_bro"></div>
+        <div class="text_bro">
+            <div class="text_top">- David Soul<span class="right">Customer</span></div>
+            <div class="text_bottom">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce a volutpat ipsum.</div>
+        </div>
+    </div>
+</div>
+<div class="block_7">
+    <div class="inner_7">
+        <div class="adr">Iconic Graphics<br>123 Main Street<br>EastWest<br>LHR 54500</div>
+        <div class="tel">012.345.6789</div>
+        <div class="mail">info@icongraphics.com</div>
+        <div class="social">
+            <img src="https://s9.wampi.ru/2020/02/25/Layer-98.png" alt="">
+            <img src="https://s9.wampi.ru/2020/02/25/Layer-99.png" alt="">
+            <img src="https://s9.wampi.ru/2020/02/25/Layer-100.png" alt="">
+        </div>
+        <img src="https://s9.wampi.ru/2020/02/25/Layer-101.png" alt="">
+    </div>
+</div>
+<div class="block_8">
+    <div class="inner_8">Copyright © 2014 <b>Company Name</b>. All right reserved.<br>
+        Designed by <span><b>IconGraphics.com</b></span></div>
+</div>
+</body>
+</html>

@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css?family=Oleo+Script&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Oxygen&display=swap" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
+    <title>Title</title>
+    <style>
+        *:focus {
+            outline: none;
+        }
+        body {
+            background: #fafafa;
+        }
+        a:hover, a:focus, a:active {
+            color: #222;
+        }
+        .wrapper {
+            width: 972px;
+            height: 918px;
+            background: #fff;
+            margin: 61px auto 84px auto;
+            font-family: Arial, sans-serif;
+        }
+        .wrapper-top {
+            width: 972px;
+            outline: 1px solid rgb(236, 236, 236);
+        }
+        .header {
+            position: relative;
+            width: 972px;
+            height: 90px;
+            margin: 0 auto;
+            font-family: Oxygen, sans-serif;
+            text-transform: capitalize;
+        }
+        .header-logo {
+            position: relative;
+            float: left;
+            width: 397px;
+            height: 90px;
+        }
+        .header-logo__logo {
+            position: absolute;
+            top: 20px;
+            left: 25px;
+            font-family: "Oleo Script", sans-serif;
+            font-size: 40px;
+            text-decoration: none;
+            color: rgb(34, 34, 34);
+        }
+        .header-logo__slogan {
+            position: absolute;
+            top: 60px;
+            left: 32px;
+            font-family: Arial, sans-serif;
+            font-size: 11px;
+            text-transform: none;
+            color: rgb(153, 153, 153);
+        }
+        .header-menu {
+            position: relative;
+            float: left;
+            width: 465px;
+            height: 90px;
+            font-size: 14px;
+        }
+        .header-menu__item {
+            float: left;
+            width: 93px;
+            height: 90px;
+            text-decoration: none;
+            color: rgb(102, 102, 102);
+            text-align: center;
+            box-sizing: border-box;
+            padding-top: 45px;
+        }
+        .blog:hover + .header-menu-submenu, .header-menu-submenu:hover {
+            display: block;
+        }
+        .header-menu-submenu {
+            position: absolute;
+            display: none;
+            width: 166px;
+            height: 157px;
+            top: 70px;
+            left: 300px;
+            background: #fff;
+            outline: 1px solid rgb(236, 236, 236);
+            z-index: 1;
+        }
+        .header-menu-submenu::before {
+            content: "";
+            position: absolute;
+            display: block;
+            top: -3px;
+            left: 23px;
+            width: 5px;
+            height: 5px;
+            border-bottom: 1px solid rgb(236, 236, 236);
+            border-right: 1px solid rgb(236, 236, 236);
+            background: #fff;
+            transform: rotate(45deg);
+            --moz-transform: rotate(45deg);
+            --o-transform: rotate(45deg);
+            --webkit-transform: rotate(45deg);
+            --ms-transform: rotate(45deg);
+        }
+        .header-menu-submenu__item {
+            display: block;
+            font-family: Oxygen, sans-serif;
+            font-size: 12px;
+            color: #666;
+            text-decoration: none;
+            margin: 5px;
+            padding: 5px;
+        }
+        .header-menu-submenu__item:hover,
+        .header-menu-submenu__item:active,
+        .header-menu-submenu__item:focus {
+            background: #f3f3f3;
+        }
+        .header-menu-submenu__item-span {
+            font-family: Arial, sans-serif;
+            font-size: 10px;
+            color: #aaa;
+        }
+        .header-menu-submenu-hr {
+            width: 145px;
+            border: 0;
+            border-bottom: 1px solid rgb(236, 236, 236);
+            margin: 0 auto;
+        }
+        .header-button {
+            position: relative;
+            float: right;
+            width: 110px;
+            height: 90px;
+        }
+        .button {
+            background: linear-gradient(90deg, #ffc34d 0%, #ffc451 100%),
+            -webkit-linear-gradient(90deg, #ffc34d 0%, #ffc451 100%);
+            border: none;
+            border-radius: 3px;
+            box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.1),
+            inset 0 0 1px 0 rgba(0, 0, 0, 0.25);
+            text-shadow: 0 -1px 1px rgba(198, 141, 30, 0.7);
+            color: #fff;
+            font-family: Oxygen, sans-serif;
+        }
+        .header-button__button {
+            position: absolute;
+            width: 85px;
+            height: 30px;
+            font-size: 13px;
+            left: 5px;
+            top: 40px;
+        }
+        .contact-h2 {
+            position: relative;
+            width: 930px;
+            height: 54px;
+            margin: 0 auto 0;
+            font-family: Oxygen, sans-serif;
+            font-size: 20px;
+            font-weight: normal;
+            color: #bbb;
+            text-transform: uppercase;
+            line-height: 54px;
+            border-top: 1px solid rgb(236, 236, 236);
+        }
+        .contact-bottom-line {
+            width: 930px;
+            height: 0;
+            border-top: 1px solid rgb(236, 236, 236);
+            margin-left: 21px;
+            box-shadow: 0 -2px 5px 0 rgba(0, 0, 0, 0.1);
+        }
+        .form-wrapper {
+            position: relative;
+            width: 930px;
+            height: 486px;
+            margin: 0 auto 0;
+        }
+        .form-message {
+            float: left;
+            width: 612px;
+            height: 486px;
+        }
+        .form-message_h3 {
+            line-height: 53px;
+            margin: 0;
+            font-family: Oxygen, sans-serif;
+            font-size: 18px;
+            font-weight: normal;
+            color: #222;
+        }
+        .form-message_form {
+            position: relative;
+            width: 593px;
+            height: 417px;
+            border-top: 1px solid rgb(236, 236, 236);
+            padding-top: 15px;
+        }
+        .form-message_form::before {
+            content: "";
+            display: block;
+            position: absolute;
+            top: -3px;
+            left: 50px;
+            width: 5px;
+            height: 5px;
+            border-bottom: 1px solid rgb(236, 236, 236);
+            border-right: 1px solid rgb(236, 236, 236);
+            transform: rotate(45deg);
+            -moz-transform: rotate(45deg);
+            -o-transform: rotate(45deg);
+            -webkit-transform: rotate(45deg);
+            -ms-transform: rotate(45deg);
+            background: #fff;
+        }
+        .form-message_form-label {
+            display: inline-block;
+            width: 110px;
+            padding-left: 5px;
+            font-size: 15px;
+            color: #444;
+        }
+        .form-message_form-label-message {
+            display: inline-block;
+            width: 110px;
+            padding-left: 5px;
+            font-size: 15px;
+            color: #444;
+            vertical-align: top;
+        }
+        .form-message_form-input {
+            display: inline-block;
+            width: 153px;
+            height: 23px;
+            margin-bottom: 15px;
+        }
+        .form-message_form-input,
+        .form-message_form-textarea {
+            border-radius: 3px;
+            border-color: rgb(236, 236, 236);
+            box-shadow: inset 0 2px 2px 0 rgba(0, 0, 0, 0.1);
+        }
+        .form-message_form-textarea {
+            display: inline-block;
+            width: 459px;
+            height: 169px;
+            font-family: Arial, sans-serif;
+            font-size: 12px;
+            padding: 5px;
+            color: #999;
+            resize: none;
+        }
+        .form-message_form-button {
+            width: 135px;
+            height: 31px;
+            margin-left: 120px;
+            margin-top: 15px;
+        }
+        .form-message_form-input:valid:not(:placeholder-shown):not(:focus) {
+            border-color: rgb(202, 226, 139);
+        }
+        .form-message_form-input:invalid:not(:placeholder-shown):not(:focus) {
+            border-color: rgb(236, 176, 176);
+        }
+        .form-message_form-input:valid:not(:placeholder-shown) + span:after {
+            content: "\f058";
+            font-family: fontawesome;
+            color: rgb(202, 226, 139);
+            padding-left: 7px;
+        }
+        .form-message_form-input-email:invalid:not(:placeholder-shown):not(:focus) + span:after {
+            content: "something wrong with your email";
+            position: relative;
+            top: -4px;
+            font-size: 11px;
+            color: rgb(172, 64, 64);
+            text-shadow: 0 1px 1px rgba(255, 255, 255, 0.5);
+            background: #ecb0b0;
+            border-radius: 3px;
+            margin-left: 7px;
+            padding: 8px;
+        }
+        .form-message_form-input-website:invalid:not(:placeholder-shown):not(:focus) + span:after {
+            content: "something wrong with your address";
+            position: relative;
+            top: -4px;
+            font-size: 11px;
+            color: rgb(172, 64, 64);
+            text-shadow: 0 1px 1px rgba(255, 255, 255, 0.5);
+            background: #ecb0b0;
+            border-radius: 3px;
+            margin-left: 7px;
+            padding: 8px;
+        }
+        .form-message_form-input:invalid:not(:placeholder-shown):not(:focus) + span:before {
+            content: "\f07e";
+            font-family: fontawesome;
+            font-size: 30px;
+            color: #ecb0b0;
+            position: relative;
+            display: inline-block;
+            top: 3px;
+            left: 6px;
+            width: 5px;
+            height: 5px;
+        }
+        .form-contact-wrapper {
+            float: left;
+            width: 318px;
+            height: 486px;
+        }
+        .form-contact {
+            position: relative;
+            top: 35px;
+            width: 300px;
+            height: 175px;
+            margin: 0 auto;
+            border: 1px solid rgb(236, 236, 236);
+        }
+        .form-contact_h4 {
+            width: 285px;
+            font-size: 12px;
+            color: rgb(102, 102, 102);
+            text-transform: uppercase;
+            line-height: 25px;
+            margin: 0 auto;
+            border-bottom: 1px solid rgb(236, 236, 236);
+        }
+        .form-contact_text {
+            padding: 0 9px;
+            font-size: 12px;
+            color: #444;
+            text-align: justify;
+        }
+        .form-contact-gap {
+            height: 36px;
+            background: #fafafa;
+        }
+        .form-contact-gap-line {
+            width: 930px;
+            height: 18px;
+            margin-left: 21px;
+            border-bottom: 1px solid rgb(236, 236, 236);
+        }
+        .footer {
+            position: relative;
+            width: 972px;
+            height: 250px;
+            outline: 1px solid rgb(236, 236, 236);
+        }
+        .footer-wrapper {
+            position: relative;
+            width: 930px;
+            height: 245px;
+            margin: 0 auto 0;
+            font-size: 0;
+            border-top: 1px solid rgb(236, 236, 236);
+        }
+        .footer-section {
+            float: left;
+            height: 245px;
+            box-sizing: border-box;
+        }
+        .footer-section:first-child {
+            width: 180px;
+            padding-left: 5px;
+            margin-right: 55px;
+        }
+        .footer-section:last-child {
+            width: 500px;
+            padding-left: 45px;
+        }
+        .footer-section:nth-child(2) {
+            width: 190px;
+        }
+        .footer-section-H4 {
+            font-size: 12px;
+            text-transform: uppercase;
+            color: #ffad19;
+        }
+        .footer-section-link {
+            display: block;
+            font-size: 12px;
+            text-decoration: none;
+            color: #666;
+            text-transform: capitalize;
+            padding-bottom: 5px;
+            margin-bottom: 9px;
+            border-bottom: 1px solid rgb(236, 236, 236);
+        }
+        .footer-section a:last-child {
+            border-bottom: 0;
+        }
+        .footer-section:last-child a::before {
+            position: relative;
+            content: "\f1ea";
+            font-family: fontawesome;
+            font-size: 20px;
+            top: 5px;
+            padding-right: 10px;
+        }
+        .footer-section:last-child a span {
+            display: block;
+            font-size: 11px;
+            margin-left: 32px;
+            color: #aaa;
+            text-transform: none;
+        }
+        .footer-wrapper:before,
+        .bottom-shadow:after {
+            z-index: -1;
+            position: absolute;
+            content: "";
+            bottom: 11px;
+            left: 10px;
+            width: 50%;
+            top: 80%;
+            max-width: 300px;
+            background: #777;
+            -webkit-box-shadow: 0 15px 10px #777;
+            -moz-box-shadow: 0 15px 10px #777;
+            box-shadow: 0 15px 10px #777;
+            -webkit-transform: rotate(-2deg);
+            -moz-transform: rotate(-2deg);
+            -o-transform: rotate(-2deg);
+            -ms-transform: rotate(-2deg);
+            transform: rotate(-2deg);
+        }
+        .footer-wrapper:after {
+            -webkit-transform: rotate(2deg);
+            -moz-transform: rotate(2deg);
+            -o-transform: rotate(2deg);
+            -ms-transform: rotate(2deg);
+            transform: rotate(2deg);
+            right: 10px;
+            left: auto;
+        }
+    </style>
+</head>
+<body>
+<div class="background">
+    <div class="wrapper">
+        <div class="wrapper-top">
+            <header class="header">
+                <div class="header-logo">
+                    <a class="header-logo__logo" href="">Officetime</a>
+                    <p class="header-logo__slogan" lang="la">Officetime a psd template</p>
+                </div>
+                <nav class="header-menu">
+                    <a class="header-menu__item home" href="">home</a>
+                    <a class="header-menu__item about" href="">about</a>
+                    <a class="header-menu__item products" href="">products</a>
+                    <a class="header-menu__item blog" href="">blog</a>
+                    <div class="header-menu-submenu">
+                        <a class="header-menu-submenu__item articles" href="">Articles<br><span class="header-menu-submenu__item-span">this text is complementary</span></a>
+                        <hr class="header-menu-submenu-hr">
+                        <a class="header-menu-submenu__item writers" href="">Writers</a>
+                        <hr class="header-menu-submenu-hr">
+                        <a class="header-menu-submenu__item top-50" href="">Top 50</a>
+                        <hr class="header-menu-submenu-hr">
+                        <a class="header-menu-submenu__item hall-of-fame" href="">The Hall of Fame</a>
+                    </div>
+                    <a class="header-menu__item help" href="">help</a>
+                </nav>
+                <div class="header-button">
+                    <button class="header-button__button button">Apply Now</button>
+                </div>
+            </header>
+            <h2 class="contact-h2">contact</h2>
+            <div class="contact-bottom-line"></div>
+            <div class="form-wrapper">
+                <div class="form-message">
+                    <h3 class="form-message_h3">Send us a Message</h3>
+                    <form class="form-message_form" id="contact-form" name="contact" method="post" action="#">
+                        <label class="form-message_form-label" for="name">Name:</label>
+                        <input type="text" name="name" id="name" class="form-message_form-input" tabindex="1" placeholder=" "
+                               required><span></span><br>
+                        <label class="form-message_form-label" for="email">E-Mail:</label>
+                        <input type="email" name="email" id="email" class="form-message_form-input form-message_form-input-email"
+                               tabindex="2" placeholder=" " required><span></span><br>
+                        <label class="form-message_form-label" for="website">Website:</label>
+                        <input type="url" name="website" id="website"
+                               class="form-message_form-input form-message_form-input-website" tabindex="3"
+                               placeholder=" "><span></span><br>
+                        <label class="form-message_form-label-message" for="message">Your Message:</label>
+                        <textarea name="message" id="message" class="form-message_form-textarea" tabindex="4"
+                                  placeholder="Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cum sociis natoque penatibus et ma..."
+                                  required></textarea><br>
+                        <input type="submit" name="submitbtn" id="submitbtn" class="form-message_form-button button" tabindex="5"
+                               value="Send Message">
+                    </form>
+                </div>
+                <div class="form-contact-wrapper">
+                    <div class="form-contact">
+                        <h4 class="form-contact_h4">contact information</h4>
+                        <p class="form-contact_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis mollis, est non
+                            commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Vivamus sagittis lacus vel
+                            augue laoreet rutrum faucibus dolor auctor. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="form-contact-gap">
+            <div class="form-contact-gap-line"></div>
+        </div>
+        <footer class="footer">
+            <div class="footer-wrapper bottom-shadow">
+                <nav class="footer-section">
+                    <h4 class="footer-section-H4">single menu title</h4>
+                    <a class="footer-section-link" href="">condimentum etiam purus</a>
+                    <a class="footer-section-link" href="">quam tristique sem</a>
+                    <a class="footer-section-link" href="">fusce parturient</a>
+                    <a class="footer-section-link" href="">tristique tortor condimentum</a>
+                    <a class="footer-section-link" href="">magna parturient aenean</a>
+                    <a class="footer-section-link" href="">tortor nibh etiam</a>
+                </nav>
+                <nav class="footer-section">
+                    <h4 class="footer-section-H4">cursus venenatis mollis</h4>
+                    <a class="footer-section-link" href="">condimentum etiam purus</a>
+                    <a class="footer-section-link" href="">quam tristique sem</a>
+                    <a class="footer-section-link" href="">fusce parturient</a>
+                    <a class="footer-section-link" href="">tristique tortor condimentum</a>
+                    <a class="footer-section-link" href="">magna parturient aenean</a>
+                    <a class="footer-section-link" href="">cursus justo fringilla</a>
+                </nav>
+                <nav class="footer-section">
+                    <h4 class="footer-section-H4">latest articlec</h4>
+                    <a class="footer-section-link" href="">fusce etiam bibendum<br><span>Sed posuere consectetur est at lobortis.</span></a>
+                    <a class="footer-section-link" href="">fuske parturient<br><span>Maecenas faucibus mollis interdum. Cras justo odio, dapibus ac facilisis
+              in, egestas eget quam.</span></a>
+                    <a class="footer-section-link" href="">magna parturient aenean<br><span>Cum sociis natoque penatibus et magnis dis parturient montes,
+              nascetur ridiculus mus.</span></a>
+                </nav>
+            </div>
+        </footer>
+    </div>
+</div>
+</body>
+</html>
