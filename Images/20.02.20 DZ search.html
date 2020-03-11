@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .wrap {
+            position: relative;
+            width: 100%;
+            min-width: 300px;
+            height: 71px;
+            padding: 8px 0 0 7px;
+        }
+        .tail {
+            float: left;
+            width: 4px;
+            height: 54px;
+            background: linear-gradient(to top, #eaba4c, #feca53);
+        }
+        .text {
+            float: left;
+            width: 86%;
+            height: 49px;
+            padding-top: 5px;
+            background: linear-gradient(to top, #eaba4c, #feca53);
+            white-space: nowrap;
+        }
+        .nose {
+            float: left;
+            width: 30px;
+            height: 54px;
+            background: linear-gradient(to top, #eaba4c, #feca53);
+        }
+        .nose::after {
+            content: "";
+            float: left;
+            position: relative;
+            border-top: 28px solid white;
+            border-left: 15px solid transparent;
+            border-right: 0px solid;
+            border-bottom: 28px solid white;
+            left: 16px;
+        }
+        .search {
+            width: calc(100% - 70px);
+            height: 28px;
+            border: 1px solid #ccc;
+            box-shadow: inset 0 2px 5px -2px #999;
+        }
+        .button {
+            vertical-align: top;
+            width: 65px;
+            height: 25px;
+            box-shadow: 0 2px 5px -2px #999;
+        }
+        .checkbox {
+            position: absolute;
+            top: 44px;
+            left: 8px;
+        }
+        .checkbox+label {
+            position: absolute;
+            top: 44px;
+            left: 22px;
+            font-size: 14px;
+            vertical-align: top;
+            line-height: 14px;
+            margin-left: 3px;
+        }
+        .checkbox {
+            display: none;
+        }
+        .checkbox+label::before {
+            content:'';
+            display:block;
+            height:9px;
+            width:9px;
+            border:1px solid #aaa;
+            border-radius: 2px;
+            position:absolute;
+            top:3px;
+            left:-12px;
+            background-color:#fff;
+        }
+        .checkbox:checked + label:before {
+            outline:1px solid #939598;
+            border:1px solid #fff;
+            width:9px;
+            height:9px;
+            background-color:#63849F;
+        }
+    </style>
+</head>
+<body>
+<div class="wrap">
+    <div class="tail"></div>
+    <form class="text">
+        <input class="search" name="s" placeholder="" type="search">
+        <button class="button" type="submit">Найти</button>
+        <input type="checkbox" id="checkbox" class="checkbox"><label for="checkbox">поиск по описаниям сайтов</label>
+    </form>
+    <div class="nose"></div>
+</div>
+</body>
+</html>

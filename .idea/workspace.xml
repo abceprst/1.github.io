@@ -1,18 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="65316325-9d96-41bf-9cb9-abc1b2ed9a82" name="Default Changelist" comment="20.01.21">
-      <change afterPath="$PROJECT_DIR$/0.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/00.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/19.12.30 table.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/20.01.15.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FlexBox.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/eurookna.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Байки.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Композиция с красным, синим и желтым.html" afterDir="false" />
+    <list default="true" id="65316325-9d96-41bf-9cb9-abc1b2ed9a82" name="Default Changelist" comment="20.01.23">
+      <change afterPath="$PROJECT_DIR$/20.02.21 DZ8_1.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/20.02.21 DZ8_2.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/20.02.27 DZ10 Showcase.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Alert.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CSSzengarden/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CSSzengarden/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CompanyNAME/20.02.04 OfficeTime main.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CompanyNAME/20.02.09 OfficeTime contact.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CompanyNAME/20.02.14 6DZ VERY FLEXIBLE OFFERS.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CompanyNAME/20.02.15 6DZ BANNER.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CompanyNAME/20.02.18 CompanyNAME.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Flexbox.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Images/20.02.20 DZ search.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1.html" beforeDir="false" afterPath="$PROJECT_DIR$/1.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/19.12.21.15.00.html" beforeDir="false" afterPath="$PROJECT_DIR$/19.12.21.15.00.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/1.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/1/000.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/1/Новая папка/000.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/19.12.21.15.00.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/19.12.30 table.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2 lesson DZ.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/20.01.15.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Display.html" beforeDir="false" afterPath="$PROJECT_DIR$/Display.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FlexBox.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Index.html" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -23,7 +37,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="CSS File" />
         <option value="HTML File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -40,7 +56,9 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/.." />
-    <property name="settings.editor.selected.configurable" value="reference.settings.ide.settings.web.browsers" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -63,12 +81,19 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JavaScript Debug.20.02.04 OfficeTime main.html">
     <configuration name="2 lesson DZ.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/1Проекты/2 lesson DZ.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="20.02.04 OfficeTime main.html" type="JavascriptDebugType" nameIsGenerated="true" uri="http://localhost:63342/1Проекты/CompanyNAME/20.02.04 OfficeTime main.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="20.02.12 DZ.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/1Проекты/20.02.12 DZ.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JavaScript Debug.20.02.12 DZ.html" />
         <item itemvalue="JavaScript Debug.2 lesson DZ.html" />
       </list>
     </recent_temporary>
@@ -99,8 +124,78 @@
       <workItem from="1579161866283" duration="6185000" />
       <workItem from="1579246539628" duration="2794000" />
       <workItem from="1579520475794" duration="6229000" />
-      <workItem from="1579594920784" duration="10222000" />
+      <workItem from="1579594920784" duration="20136000" />
+      <workItem from="1579674919304" duration="6434000" />
+      <workItem from="1579686017549" duration="3564000" />
+      <workItem from="1579762227147" duration="6270000" />
+      <workItem from="1579789046032" duration="696000" />
+      <workItem from="1579790617843" duration="427000" />
+      <workItem from="1579850528818" duration="9543000" />
+      <workItem from="1579946458651" duration="962000" />
+      <workItem from="1580033723544" duration="234000" />
+      <workItem from="1580043701403" duration="1835000" />
+      <workItem from="1580110765923" duration="13789000" />
+      <workItem from="1580202493744" duration="9308000" />
+      <workItem from="1580282252670" duration="18130000" />
+      <workItem from="1580367369595" duration="19707000" />
+      <workItem from="1580454499234" duration="1863000" />
+      <workItem from="1580464754506" duration="99000" />
+      <workItem from="1580464869103" duration="6461000" />
+      <workItem from="1580548043831" duration="12250000" />
+      <workItem from="1580633004747" duration="11458000" />
+      <workItem from="1580716487177" duration="6329000" />
+      <workItem from="1580799427615" duration="785000" />
+      <workItem from="1580887432838" duration="594000" />
+      <workItem from="1580983420671" duration="14717000" />
+      <workItem from="1581059300026" duration="1256000" />
+      <workItem from="1581063959254" duration="3949000" />
+      <workItem from="1581083900229" duration="6391000" />
+      <workItem from="1581437346910" duration="885000" />
+      <workItem from="1581498181265" duration="1441000" />
+      <workItem from="1581511019158" duration="1196000" />
+      <workItem from="1581580233721" duration="2023000" />
+      <workItem from="1581685602255" duration="2453000" />
+      <workItem from="1581760975980" duration="593000" />
+      <workItem from="1581776429695" duration="650000" />
+      <workItem from="1581839867786" duration="873000" />
+      <workItem from="1581933521486" duration="753000" />
+      <workItem from="1582029576804" duration="2369000" />
+      <workItem from="1582106082914" duration="762000" />
+      <workItem from="1582118253886" duration="1657000" />
+      <workItem from="1582190071549" duration="2455000" />
+      <workItem from="1582209625377" duration="527000" />
+      <workItem from="1582266575695" duration="2661000" />
+      <workItem from="1582277845278" duration="6711000" />
+      <workItem from="1582359516167" duration="694000" />
+      <workItem from="1582361115499" duration="4839000" />
+      <workItem from="1582394790376" duration="4400000" />
+      <workItem from="1582527255213" duration="12854000" />
+      <workItem from="1582617473378" duration="4497000" />
+      <workItem from="1582648063094" duration="1425000" />
+      <workItem from="1582798135139" duration="1164000" />
+      <workItem from="1582895883108" duration="623000" />
+      <workItem from="1583143406493" duration="61000" />
+      <workItem from="1583143479902" duration="4000" />
+      <workItem from="1583151747396" duration="92000" />
+      <workItem from="1583351235512" duration="143000" />
+      <workItem from="1583479992541" duration="353000" />
+      <workItem from="1583496462514" duration="7176000" />
+      <workItem from="1583569417654" duration="2885000" />
+      <workItem from="1583655698512" duration="594000" />
+      <workItem from="1583762578788" duration="2187000" />
+      <workItem from="1583764995737" duration="2118000" />
+      <workItem from="1583821378865" duration="6390000" />
+      <workItem from="1583850760459" duration="922000" />
+      <workItem from="1583909457235" duration="8408000" />
     </task>
+    <task id="LOCAL-00001" summary="20.01.21">
+      <created>1579605272774</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1579605272774</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -122,6 +217,7 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="20.01.21" />
-    <option name="LAST_COMMIT_MESSAGE" value="20.01.21" />
+    <MESSAGE value="20.01.23" />
+    <option name="LAST_COMMIT_MESSAGE" value="20.01.23" />
   </component>
 </project>
